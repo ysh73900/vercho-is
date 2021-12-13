@@ -1,0 +1,73 @@
+<section class="main">
+  <div class="card-register">
+    <h1 class="page-header">Register</h1>
+    <br />
+    <form (ngSubmit)="onRegisterSubmit()">
+      <div class="form-group">
+        <input
+          type="text"
+          [(ngModel)]="name"
+          [ngModelOptions]="{ standalone: true }"
+          class="form-control"
+          id="exampleInputEmail1"
+          required
+        />
+        <span></span>
+        <label for="exampleInputEmail1">Name</label>
+      </div>
+      <br />
+      <div class="form-group">
+        <input
+          type="email text"
+          [(ngModel)]="email"
+          [ngModelOptions]="{ standalone: true }"
+          class="form-control"
+          id="exampleInputEmail2"
+          required
+        />
+        <span></span>
+        <label for="exampleInputEmail2">Email address</label>
+      </div>
+      <br />
+      <div class="form-group">
+        <input
+          type="text"
+          [(ngModel)]="username"
+          [ngModelOptions]="{ standalone: true }"
+          class="form-control"
+          id="exampleInputEmail3"
+          required
+        />
+        <span></span>
+        <label for="exampleInputEmail3">Username</label>
+      </div>
+      <br />
+      <div class="form-group">
+        <input
+          type="password"
+          [(ngModel)]="password1"
+          [ngModelOptions]="{ standalone: true }"
+          class="form-control"
+          id="exampleInputEmail4"
+          required
+        />
+        <span></span>
+        <label for="exampleInputEmail4">Password</label>
+      </div>
+      <br />
+      <div class="form-group">
+        <input
+          type="password"
+          [(ngModel)]="password2"
+          [ngModelOptions]="{ standalone: true }"
+          class="form-control"
+          id="exampleInputEmail5"
+          required
+        />
+        <span></span>
+        <label for="exampleInputEmail5">Confirm Password</label>
+      </div>
+      <input type="submit" class="log-btn" value="회원 가입" />
+    </form>
+  </div>
+</section>
